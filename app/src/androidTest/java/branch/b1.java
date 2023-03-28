@@ -3,11 +3,21 @@ package branch;
 public class b1 {
     String name, id;
     float cgpa;
+    double fees;
 
-    b1(String s, String s1, float f){
-        this.name=s;
-        this.id=s1;
-        this.cgpa=f;
+    public double getFees() {
+        return fees;
+    }
+
+    public void setFees(double fees) {
+        this.fees = fees;
+    }
+
+    public b1(String name, String id, float cgpa, double fees) {
+        this.name = name;
+        this.id = id;
+        this.cgpa = cgpa;
+        this.fees = fees;
     }
 
     public String getName() {
