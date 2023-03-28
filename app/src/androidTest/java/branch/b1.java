@@ -3,21 +3,21 @@ package branch;
 public class b1 {
     String name, id;
     float cgpa;
-    int mark;
+    double fees;
 
-    public b1(String name, String id, float cgpa, int mark) {
+    public double getFees() {
+        return fees;
+    }
+
+    public void setFees(double fees) {
+        this.fees = fees;
+    }
+
+    public b1(String name, String id, float cgpa, double fees) {
         this.name = name;
         this.id = id;
         this.cgpa = cgpa;
-        this.mark = mark;
-    }
-
-    public int getMark() {
-        return mark;
-    }
-
-    public void setMark(int mark) {
-        this.mark = mark;
+        this.fees = fees;
     }
 
     public String getName() {
